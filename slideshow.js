@@ -5,7 +5,7 @@ function initSlides() {
     showSlides(slideIndex);
     slideInterval = setInterval(() => {
         plusSlides(1);
-    }, 5000); // Change image every 5 seconds
+    }, 10000); // Change image every 5 seconds
 }
 
 function plusSlides(n) {
@@ -13,7 +13,7 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
     slideInterval = setInterval(() => {
         plusSlides(1);
-    }, 5000);
+    }, 10000);
 }
 
 function currentSlide(n) {
@@ -21,7 +21,7 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
     slideInterval = setInterval(() => {
         plusSlides(1);
-    }, 5000);
+    }, 10000);
 }
 
 function showSlides(n) {

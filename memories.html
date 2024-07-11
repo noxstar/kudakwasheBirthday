@@ -6,6 +6,7 @@
     <title>Memories</title>
     <link rel="stylesheet" href="styles.css">
     <script src="slideshow.js" defer></script>
+    <script src="include.js" defer></script>
 </head>
 <body class="memories-page">
     <div w3-include-html="header.html"></div>
@@ -14,44 +15,46 @@
         <div class="slideshow-container">
             <div class="mySlides fade slide1">
                 <div class="polaroid">
-                    <img src="kuda.PNG" style="width:100%">
+                    <img src="kudaIce.jpg" style="width:100%">
                     <div class="caption">Description of memory 1</div>
                 </div>
             </div>
             <div class="mySlides fade slide2">
                 <div class="polaroid">
-                    <img src="kudaIce.jpg" style="width:100%">
-                    <div class="caption">Description of memory 2</div>
+                    <img src="kuda.PNG" style="width:100%">
+                    <div class="caption">It's the way you care for the people around you, often putting their needs before your own. I know often hear people saying, "You're too nice," but as I told you before, it's a strength, not a flaw. Don't ever lose it. We need more people like you in this world.</div>
                 </div>
             </div>
             <div class="mySlides fade slide3">
                 <div class="polaroid">
                     <img src="Kuda&me.jpg" style="width:100%">
-                    <div class="caption">Description of memory 3</div>
+                    <div class="caption">It's the way you pay attention to the little details, never forgetting even the smallest things. Despite me telling you to forget my nickname, you remembered. It's the moments we've shared that mean so much.
+                    </div>
                 </div>
             </div>
             <div class="mySlides fade slide4">
                 <div class="polaroid">
                     <img src="KE.jpg" style="width:100%">
-                    <div class="caption">Description of memory 4</div>
+                    <div class="caption">You brought out the fun side of me. Did you know people in high school called me uptight or difficult? Whenever I was with you, my carefree side came out, bringing true happiness with no worries in the world. Deep down, I always knew you were my safe place. With your kind heart, I’m sure you are a safe place for many.</div>
                 </div>
             </div>
             <div class="mySlides fade slide5">
                 <div class="polaroid">
                     <img src="kuda2.jpg" style="width:100%">
-                    <div class="caption">Description of memory 5</div>
+                    <div class="caption">You are a man who knows what he wants. I admire how you pursue your goals, how you love God, and serve Him. I pray you become the man the Lord wants you to be. I pray He continues to guide your path and walk before you.</div>
                 </div>
             </div>
             <div class="mySlides fade slide6">
                 <div class="polaroid">
                     <img src="K&W.JPG" style="width:100%">
-                    <div class="caption">Description of memory 6</div>
+                    <div class="caption">I pray the doors meant for you will be opened, and for good health, wisdom, and joy. When things get hard, I pray you always remember that God is in control and that He is good.</div>
                 </div>
             </div>
             <div class="mySlides fade slide7">
                 <div class="polaroid">
                     <img src="us.jpeg" style="width:100%">
-                    <div class="caption">Description of memory 7</div>
+                    <div class="caption"> I am so incredibly fortunate to have you as a friend. I hope you have the most amazing birthday!
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,30 +73,4 @@
         </div>
     </div>
 </body>
-
-<script>
-        // Function to include HTML
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4 && this.status == 200) {
-                            elmnt.innerHTML = this.responseText;
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    return;
-                }
-            }
-        }
-        includeHTML();
-    </script>
 </html>
